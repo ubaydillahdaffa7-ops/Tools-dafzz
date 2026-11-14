@@ -1,0 +1,2102 @@
+[
+  {
+    "slug": "hapus-latar",
+    "name": "Hapus Latar",
+    "description": "Hapus latar foto langsung di browser",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "hapus-objek",
+    "name": "Hapus Objek",
+    "description": "Tandai area untuk disamarkan",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "hapus-orang",
+    "name": "Hapus Orang",
+    "description": "Tandai orang untuk penghapusan eksperimental",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "hapus-teks-foto",
+    "name": "Hapus Teks Foto",
+    "description": "Samarkan area teks pada gambar",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "upscale-2x",
+    "name": "Upscale 2x",
+    "description": "Perbesar gambar dengan interpolasi",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "upscale-4x",
+    "name": "Upscale 4x",
+    "description": "Perbesar gambar hingga empat kali",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "unblur",
+    "name": "Pertajam Foto",
+    "description": "Kurangi kesan buram dengan unsharp mask",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "restore-foto",
+    "name": "Pulihkan Foto",
+    "description": "Denoise dan tingkatkan kontras foto",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "colorize",
+    "name": "Warnai Foto",
+    "description": "Eksperimen pewarnaan foto hitam putih",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "kompres-gambar",
+    "name": "Kompres Gambar",
+    "description": "Atur kualitas dan ukuran gambar",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "ubah-ukuran",
+    "name": "Ubah Ukuran Gambar",
+    "description": "Atur lebar dan tinggi gambar",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "potong-gambar",
+    "name": "Potong Gambar",
+    "description": "Crop gambar sesuai rasio",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "putar-gambar",
+    "name": "Putar Gambar",
+    "description": "Putar gambar 90 derajat",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "balik-gambar",
+    "name": "Balik Gambar",
+    "description": "Balik gambar horizontal atau vertikal",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "konversi-jpg",
+    "name": "Konversi ke JPG",
+    "description": "Ubah gambar menjadi JPG",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "konversi-png",
+    "name": "Konversi ke PNG",
+    "description": "Ubah gambar menjadi PNG",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "konversi-webp",
+    "name": "Konversi ke WebP",
+    "description": "Ubah gambar menjadi WebP",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "konversi-avif",
+    "name": "Konversi ke AVIF",
+    "description": "Ubah gambar ke AVIF jika browser mendukung",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "konversi-bmp",
+    "name": "Konversi ke BMP",
+    "description": "Ubah gambar menjadi BMP",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "konversi-gif",
+    "name": "Konversi ke GIF",
+    "description": "Ekspor gambar ke format GIF",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "foto-ke-pdf",
+    "name": "Foto ke PDF",
+    "description": "Gabungkan foto menjadi PDF",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "pdf-ke-foto",
+    "name": "PDF ke Foto",
+    "description": "Render halaman PDF menjadi gambar",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "buat-kolase",
+    "name": "Buat Kolase",
+    "description": "Susun beberapa foto dalam satu kanvas",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "tambah-watermark",
+    "name": "Tambah Watermark",
+    "description": "Tambahkan teks watermark",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "hapus-watermark",
+    "name": "Hapus Watermark",
+    "description": "Panduan retouch area watermark",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "blur-foto",
+    "name": "Blur Foto",
+    "description": "Beri efek blur pada foto",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "pixelate-foto",
+    "name": "Pixelate Foto",
+    "description": "Samarkan area dengan piksel",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "filter-grayscale",
+    "name": "Hitam Putih",
+    "description": "Ubah foto menjadi grayscale",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "filter-sepia",
+    "name": "Filter Sepia",
+    "description": "Beri nuansa sepia",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "filter-brightness",
+    "name": "Atur Kecerahan",
+    "description": "Sesuaikan tingkat kecerahan",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "filter-contrast",
+    "name": "Atur Kontras",
+    "description": "Sesuaikan kontras gambar",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "filter-saturasi",
+    "name": "Atur Saturasi",
+    "description": "Sesuaikan saturasi warna",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "filter-invert",
+    "name": "Invert Warna",
+    "description": "Balik seluruh warna gambar",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "filter-vintage",
+    "name": "Filter Vintage",
+    "description": "Beri efek vintage sederhana",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "tambah-border",
+    "name": "Tambah Border",
+    "description": "Tambahkan bingkai gambar",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "gambar-bulat",
+    "name": "Bulatkan Foto",
+    "description": "Buat foto berbentuk lingkaran",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "ekstrak-warna",
+    "name": "Ekstrak Warna",
+    "description": "Ambil warna dominan dari gambar",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "ambil-pallete",
+    "name": "Palet Warna Foto",
+    "description": "Buat palet dari foto",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "ocr-gambar",
+    "name": "OCR Gambar",
+    "description": "Ekstrak teks dari gambar jika didukung",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "deteksi-wajah",
+    "name": "Deteksi Wajah",
+    "description": "Deteksi wajah secara lokal bila model tersedia",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "buat-favicon",
+    "name": "Buat Favicon",
+    "description": "Buat ikon website dari gambar",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "buat-thumbnail",
+    "name": "Buat Thumbnail",
+    "description": "Buat thumbnail gambar",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "kompres-batch",
+    "name": "Kompres Banyak Foto",
+    "description": "Kompres beberapa gambar sekaligus",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "rename-foto",
+    "name": "Ubah Nama Foto",
+    "description": "Unduh gambar dengan nama baru",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "metadata-foto",
+    "name": "Lihat Metadata Foto",
+    "description": "Lihat metadata dasar file",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "hapus-metadata",
+    "name": "Hapus Metadata",
+    "description": "Ekspor ulang gambar tanpa metadata umum",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "gambar-base64",
+    "name": "Gambar ke Base64",
+    "description": "Ubah gambar menjadi string Base64",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "base64-gambar",
+    "name": "Base64 ke Gambar",
+    "description": "Tampilkan gambar dari Base64",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "buat-meme",
+    "name": "Pembuat Meme",
+    "description": "Tambahkan teks atas dan bawah",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "gambar-transparan",
+    "name": "Cek Transparansi",
+    "description": "Periksa kanal alpha gambar",
+    "category": "foto",
+    "icon": "image"
+  },
+  {
+    "slug": "hitung-kata",
+    "name": "Hitung Kata",
+    "description": "Hitung kata, karakter, dan paragraf",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "hitung-karakter",
+    "name": "Hitung Karakter",
+    "description": "Hitung jumlah karakter teks",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "ubah-huruf-besar",
+    "name": "Huruf Besar",
+    "description": "Ubah teks menjadi uppercase",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "ubah-huruf-kecil",
+    "name": "Huruf Kecil",
+    "description": "Ubah teks menjadi lowercase",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "title-case",
+    "name": "Title Case",
+    "description": "Kapitalisasi awal setiap kata",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "sentence-case",
+    "name": "Sentence Case",
+    "description": "Kapitalisasi awal kalimat",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "hapus-spasi",
+    "name": "Hapus Spasi Ekstra",
+    "description": "Rapikan spasi berulang",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "hapus-baris-kosong",
+    "name": "Hapus Baris Kosong",
+    "description": "Hilangkan baris kosong",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "urutkan-baris",
+    "name": "Urutkan Baris",
+    "description": "Urutkan baris A sampai Z",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "acak-baris",
+    "name": "Acak Baris",
+    "description": "Acak urutan baris",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "hapus-duplikat",
+    "name": "Hapus Baris Duplikat",
+    "description": "Hapus baris yang sama",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "balik-teks",
+    "name": "Balik Teks",
+    "description": "Balik urutan karakter",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "balik-kata",
+    "name": "Balik Urutan Kata",
+    "description": "Balik urutan kata",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "potong-teks",
+    "name": "Potong Teks",
+    "description": "Batasi panjang teks",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "slugify",
+    "name": "Buat URL Slug",
+    "description": "Ubah teks menjadi slug URL",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "url-encode",
+    "name": "URL Encode",
+    "description": "Encode teks untuk URL",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "url-decode",
+    "name": "URL Decode",
+    "description": "Decode teks URL",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "base64-encode",
+    "name": "Base64 Encode",
+    "description": "Encode teks ke Base64",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "base64-decode",
+    "name": "Base64 Decode",
+    "description": "Decode Base64 menjadi teks",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "hex-encode",
+    "name": "Hex Encode",
+    "description": "Encode teks ke hexadecimal",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "hex-decode",
+    "name": "Hex Decode",
+    "description": "Decode hexadecimal menjadi teks",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "binary-encode",
+    "name": "Binary Encode",
+    "description": "Ubah teks menjadi biner",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "binary-decode",
+    "name": "Binary Decode",
+    "description": "Ubah biner menjadi teks",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "ascii-converter",
+    "name": "ASCII Converter",
+    "description": "Konversi karakter dan kode ASCII",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "unicode-escape",
+    "name": "Unicode Escape",
+    "description": "Escape karakter Unicode",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "html-entities",
+    "name": "HTML Entities",
+    "description": "Encode atau decode HTML entities",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "rot13",
+    "name": "ROT13",
+    "description": "Enkripsi dan dekripsi ROT13",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "rot47",
+    "name": "ROT47",
+    "description": "Transformasi ROT47",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "caesar-cipher",
+    "name": "Caesar Cipher",
+    "description": "Enkripsi Caesar sederhana",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "atbash",
+    "name": "Atbash Cipher",
+    "description": "Transformasi sandi Atbash",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "morse-code",
+    "name": "Morse Code",
+    "description": "Konversi teks dan kode Morse",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "text-to-morse",
+    "name": "Teks ke Morse",
+    "description": "Encode teks menjadi Morse",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "morse-to-text",
+    "name": "Morse ke Teks",
+    "description": "Decode Morse menjadi teks",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "json-formatter",
+    "name": "JSON Formatter",
+    "description": "Format JSON agar mudah dibaca",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "json-minifier",
+    "name": "JSON Minifier",
+    "description": "Minifikasi JSON",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "json-validator",
+    "name": "JSON Validator",
+    "description": "Validasi sintaks JSON",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "json-to-csv",
+    "name": "JSON ke CSV",
+    "description": "Konversi array JSON ke CSV",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "csv-to-json",
+    "name": "CSV ke JSON",
+    "description": "Konversi CSV menjadi JSON",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "json-to-yaml",
+    "name": "JSON ke YAML",
+    "description": "Konversi JSON sederhana ke YAML",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "markdown-preview",
+    "name": "Markdown Preview",
+    "description": "Pratinjau Markdown sederhana",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "lorem-ipsum",
+    "name": "Lorem Ipsum",
+    "description": "Buat teks placeholder",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "password-generator",
+    "name": "Password Generator",
+    "description": "Buat password acak",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "uuid-generator",
+    "name": "UUID Generator",
+    "description": "Buat UUID v4",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "random-text",
+    "name": "Teks Acak",
+    "description": "Buat teks acak",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "diff-teks",
+    "name": "Bandingkan Teks",
+    "description": "Bandingkan dua teks",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "find-replace",
+    "name": "Cari dan Ganti",
+    "description": "Cari dan ganti kata",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "extract-email",
+    "name": "Ekstrak Email",
+    "description": "Ambil alamat email dari teks",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "extract-url",
+    "name": "Ekstrak URL",
+    "description": "Ambil tautan dari teks",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "remove-html",
+    "name": "Hapus Tag HTML",
+    "description": "Ambil teks dari HTML",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "word-frequency",
+    "name": "Frekuensi Kata",
+    "description": "Hitung frekuensi kata",
+    "category": "teks",
+    "icon": "file-text"
+  },
+  {
+    "slug": "pdf-merge",
+    "name": "Gabung PDF",
+    "description": "Gabungkan beberapa file PDF",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "pdf-split",
+    "name": "Pisah PDF",
+    "description": "Pisahkan halaman PDF",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "pdf-compress",
+    "name": "Kompres PDF",
+    "description": "Kompres PDF dengan render ulang",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "pdf-to-word",
+    "name": "PDF ke Word",
+    "description": "Ekstrak teks PDF ke DOCX sederhana",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "word-to-pdf",
+    "name": "Word ke PDF",
+    "description": "Konversi DOCX ke PDF terbatas",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "pdf-to-excel",
+    "name": "PDF ke Excel",
+    "description": "Ekstrak teks PDF ke spreadsheet",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "excel-to-pdf",
+    "name": "Excel ke PDF",
+    "description": "Ekspor tabel spreadsheet ke PDF",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "pdf-to-ppt",
+    "name": "PDF ke PowerPoint",
+    "description": "Jadikan halaman PDF sebagai slide gambar",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "ppt-to-pdf",
+    "name": "PowerPoint ke PDF",
+    "description": "Konversi slide ke PDF secara terbatas",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "pdf-extract-image",
+    "name": "Ekstrak Gambar PDF",
+    "description": "Ekstrak atau render gambar dari PDF",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "pdf-rotate",
+    "name": "Putar Halaman PDF",
+    "description": "Putar halaman PDF",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "pdf-delete-pages",
+    "name": "Hapus Halaman PDF",
+    "description": "Hapus halaman tertentu",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "pdf-reorder",
+    "name": "Atur Ulang PDF",
+    "description": "Ubah urutan halaman",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "pdf-watermark",
+    "name": "Watermark PDF",
+    "description": "Tambahkan watermark teks",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "pdf-page-number",
+    "name": "Nomor Halaman PDF",
+    "description": "Tambahkan nomor halaman",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "pdf-protect",
+    "name": "Lindungi PDF",
+    "description": "Panduan dan opsi proteksi PDF",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "pdf-unlock",
+    "name": "Buka PDF",
+    "description": "Buka PDF jika memiliki kata sandi",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "pdf-to-image",
+    "name": "PDF ke Gambar",
+    "description": "Ekspor halaman PDF menjadi gambar",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "image-to-pdf",
+    "name": "Gambar ke PDF",
+    "description": "Buat PDF dari gambar",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "docx-to-txt",
+    "name": "DOCX ke TXT",
+    "description": "Ekstrak teks dari DOCX",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "txt-to-pdf",
+    "name": "TXT ke PDF",
+    "description": "Buat PDF dari teks",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "csv-to-xlsx",
+    "name": "CSV ke XLSX",
+    "description": "Konversi CSV ke Excel",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "xlsx-to-csv",
+    "name": "XLSX ke CSV",
+    "description": "Konversi Excel ke CSV",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "xlsx-viewer",
+    "name": "Excel Viewer",
+    "description": "Lihat isi workbook Excel",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "xlsx-merge",
+    "name": "Gabung Excel",
+    "description": "Gabungkan data workbook",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "xlsx-split",
+    "name": "Pisah Excel",
+    "description": "Pisahkan sheet workbook",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "zip-create",
+    "name": "Buat ZIP",
+    "description": "Kompres file menjadi ZIP",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "zip-extract",
+    "name": "Ekstrak ZIP",
+    "description": "Ekstrak isi arsip ZIP",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "file-to-base64",
+    "name": "File ke Base64",
+    "description": "Encode file menjadi Base64",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "base64-to-file",
+    "name": "Base64 ke File",
+    "description": "Unduh file dari Base64",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "file-hash",
+    "name": "Hash File",
+    "description": "Hitung SHA-256 file",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "file-info",
+    "name": "Info File",
+    "description": "Lihat ukuran dan tipe file",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "mime-check",
+    "name": "Cek MIME Type",
+    "description": "Periksa tipe MIME file",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "rename-file",
+    "name": "Ubah Nama File",
+    "description": "Unduh salinan dengan nama baru",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "text-to-file",
+    "name": "Teks ke File",
+    "description": "Unduh teks sebagai file",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "merge-text-files",
+    "name": "Gabung File Teks",
+    "description": "Gabungkan beberapa file teks",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "split-text-file",
+    "name": "Pisah File Teks",
+    "description": "Bagi file teks per baris",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "xml-viewer",
+    "name": "XML Viewer",
+    "description": "Tampilkan XML dengan indentasi",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "xml-formatter",
+    "name": "XML Formatter",
+    "description": "Format dokumen XML",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "html-to-pdf",
+    "name": "HTML ke PDF",
+    "description": "Cetak HTML menjadi PDF",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "json-to-file",
+    "name": "JSON ke File",
+    "description": "Unduh JSON sebagai file",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "file-compare",
+    "name": "Bandingkan File",
+    "description": "Bandingkan file teks",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "data-uri",
+    "name": "Data URI Generator",
+    "description": "Buat Data URI dari file",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "qr-to-file",
+    "name": "QR ke File",
+    "description": "Simpan QR sebagai gambar",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "extract-text-pdf",
+    "name": "Ekstrak Teks PDF",
+    "description": "Ambil teks dari PDF",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "pdf-page-count",
+    "name": "Hitung Halaman PDF",
+    "description": "Hitung jumlah halaman PDF",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "docx-viewer",
+    "name": "DOCX Viewer",
+    "description": "Ekstrak dan tampilkan teks DOCX",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "archive-info",
+    "name": "Info Arsip",
+    "description": "Lihat daftar isi ZIP",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "file-converter",
+    "name": "Konverter File",
+    "description": "Konversi format yang didukung browser",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "docx-to-html",
+    "name": "DOCX ke HTML",
+    "description": "Ekstrak dokumen DOCX menjadi HTML sederhana",
+    "category": "file",
+    "icon": "file"
+  },
+  {
+    "slug": "celsius-fahrenheit",
+    "name": "Celsius ke Fahrenheit",
+    "description": "Konversi suhu Celsius dan Fahrenheit",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "fahrenheit-celsius",
+    "name": "Fahrenheit ke Celsius",
+    "description": "Konversi Fahrenheit ke Celsius",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "celsius-kelvin",
+    "name": "Celsius ke Kelvin",
+    "description": "Konversi Celsius ke Kelvin",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "km-mile",
+    "name": "Kilometer ke Mil",
+    "description": "Konversi jarak kilometer dan mil",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "mile-km",
+    "name": "Mil ke Kilometer",
+    "description": "Konversi mil ke kilometer",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "kg-pound",
+    "name": "Kilogram ke Pound",
+    "description": "Konversi massa kilogram dan pound",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "pound-kg",
+    "name": "Pound ke Kilogram",
+    "description": "Konversi pound ke kilogram",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "gram-ounce",
+    "name": "Gram ke Ounce",
+    "description": "Konversi gram dan ounce",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "liter-gallon",
+    "name": "Liter ke Galon",
+    "description": "Konversi liter dan galon US",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "gallon-liter",
+    "name": "Galon ke Liter",
+    "description": "Konversi galon US ke liter",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "ml-liter",
+    "name": "Mililiter ke Liter",
+    "description": "Konversi volume",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "meter-feet",
+    "name": "Meter ke Feet",
+    "description": "Konversi panjang meter dan feet",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "feet-meter",
+    "name": "Feet ke Meter",
+    "description": "Konversi feet ke meter",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "cm-inch",
+    "name": "Sentimeter ke Inci",
+    "description": "Konversi cm dan inci",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "inch-cm",
+    "name": "Inci ke Sentimeter",
+    "description": "Konversi inci ke cm",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "meter-km",
+    "name": "Meter ke Kilometer",
+    "description": "Konversi meter ke kilometer",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "km-meter",
+    "name": "Kilometer ke Meter",
+    "description": "Konversi kilometer ke meter",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "area-converter",
+    "name": "Konverter Luas",
+    "description": "Konversi satuan luas",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "volume-converter",
+    "name": "Konverter Volume",
+    "description": "Konversi satuan volume",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "speed-converter",
+    "name": "Konverter Kecepatan",
+    "description": "Konversi satuan kecepatan",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "data-converter",
+    "name": "Konverter Data",
+    "description": "Konversi byte dan turunannya",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "decimal-binary",
+    "name": "Desimal ke Biner",
+    "description": "Konversi bilangan desimal ke biner",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "binary-decimal",
+    "name": "Biner ke Desimal",
+    "description": "Konversi biner ke desimal",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "decimal-hex",
+    "name": "Desimal ke Hex",
+    "description": "Konversi desimal ke hexadecimal",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "hex-decimal",
+    "name": "Hex ke Desimal",
+    "description": "Konversi hexadecimal ke desimal",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "decimal-octal",
+    "name": "Desimal ke Oktal",
+    "description": "Konversi desimal ke oktal",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "octal-decimal",
+    "name": "Oktal ke Desimal",
+    "description": "Konversi oktal ke desimal",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "unix-timestamp",
+    "name": "Unix Timestamp",
+    "description": "Konversi timestamp dan tanggal",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "date-difference",
+    "name": "Selisih Tanggal",
+    "description": "Hitung selisih dua tanggal",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "date-add-subtract",
+    "name": "Tambah Kurang Tanggal",
+    "description": "Tambah atau kurangi hari",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "time-converter",
+    "name": "Konverter Waktu",
+    "description": "Konversi detik, menit, dan jam",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "timezone-converter",
+    "name": "Konverter Zona Waktu",
+    "description": "Konversi waktu antar zona",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "percentage-calculator",
+    "name": "Kalkulator Persentase",
+    "description": "Hitung persentase nilai",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "discount-calculator",
+    "name": "Kalkulator Diskon",
+    "description": "Hitung harga setelah diskon",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "tax-calculator",
+    "name": "Kalkulator PPN",
+    "description": "Hitung pajak dan total harga",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "split-bill",
+    "name": "Bagi Tagihan",
+    "description": "Hitung pembagian tagihan",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "average-calculator",
+    "name": "Kalkulator Rata-rata",
+    "description": "Hitung nilai rata-rata",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "ratio-calculator",
+    "name": "Kalkulator Rasio",
+    "description": "Sederhanakan rasio",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "hex-rgb",
+    "name": "HEX ke RGB",
+    "description": "Konversi warna HEX dan RGB",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "rgb-hex",
+    "name": "RGB ke HEX",
+    "description": "Konversi RGB menjadi HEX",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "hsl-rgb",
+    "name": "HSL ke RGB",
+    "description": "Konversi warna HSL dan RGB",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "color-picker",
+    "name": "Color Picker",
+    "description": "Pilih warna dan salin kode",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "aspect-ratio",
+    "name": "Kalkulator Rasio",
+    "description": "Hitung rasio aspek gambar",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "bmi-calculator",
+    "name": "Kalkulator BMI",
+    "description": "Hitung indeks massa tubuh",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "loan-calculator",
+    "name": "Kalkulator Cicilan",
+    "description": "Estimasi cicilan sederhana",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "compound-interest",
+    "name": "Bunga Majemuk",
+    "description": "Hitung pertumbuhan bunga majemuk",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "random-number",
+    "name": "Angka Acak",
+    "description": "Buat angka acak dalam rentang",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "number-format",
+    "name": "Format Angka",
+    "description": "Format angka sesuai locale",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "roman-numeral",
+    "name": "Angka Romawi",
+    "description": "Konversi angka ke Romawi",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "unit-price",
+    "name": "Harga per Unit",
+    "description": "Bandingkan harga per satuan",
+    "category": "konverter",
+    "icon": "refresh-cw"
+  },
+  {
+    "slug": "password-checker",
+    "name": "Password Checker",
+    "description": "Periksa kekuatan password secara lokal",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "password-generator-secure",
+    "name": "Password Aman",
+    "description": "Buat password dengan crypto API",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "hash-sha256",
+    "name": "SHA-256 Hash",
+    "description": "Hitung hash SHA-256",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "hash-sha512",
+    "name": "SHA-512 Hash",
+    "description": "Hitung hash SHA-512",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "hash-sha1",
+    "name": "SHA-1 Hash",
+    "description": "Hitung hash SHA-1",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "hash-md5",
+    "name": "MD5 Hash",
+    "description": "MD5 tidak tersedia di Web Crypto bawaan",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "file-checksum",
+    "name": "File Checksum",
+    "description": "Hitung checksum file SHA-256",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "uuid-secure",
+    "name": "UUID Aman",
+    "description": "Buat UUID acak",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "token-generator",
+    "name": "Token Generator",
+    "description": "Buat token acak kriptografis",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "totp-generator",
+    "name": "TOTP Authenticator",
+    "description": "Buat kode OTP berbasis waktu",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "totp-verify",
+    "name": "Verifikasi TOTP",
+    "description": "Verifikasi kode OTP",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "twofa-setup",
+    "name": "Setup Two-Factor",
+    "description": "Buat secret dan URI otpauth",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "aes-encrypt",
+    "name": "AES Encrypt",
+    "description": "Enkripsi teks dengan AES-GCM",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "aes-decrypt",
+    "name": "AES Decrypt",
+    "description": "Dekripsi teks AES-GCM",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "jwt-decode",
+    "name": "JWT Decoder",
+    "description": "Decode header dan payload JWT",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "jwt-verify",
+    "name": "JWT Inspector",
+    "description": "Periksa struktur token JWT",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "base64-security",
+    "name": "Base64 Inspector",
+    "description": "Decode Base64 untuk inspeksi",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "url-safety",
+    "name": "Safe URL Check",
+    "description": "Periksa pola URL mencurigakan",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "phishing-check",
+    "name": "Phishing Check",
+    "description": "Analisis heuristik tautan",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "breach-check",
+    "name": "Breach Check",
+    "description": "Cek kebocoran via layanan publik",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "dns-lookup",
+    "name": "DNS Lookup",
+    "description": "Cari record DNS via DNS-over-HTTPS",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "whois-rdap",
+    "name": "WHOIS / RDAP",
+    "description": "Cari data registrasi domain via RDAP",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "ssl-check",
+    "name": "SSL Certificate Check",
+    "description": "Lihat data sertifikat publik",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "headers-check",
+    "name": "HTTP Headers Check",
+    "description": "Periksa header yang dapat diakses",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "ip-lookup",
+    "name": "IP Lookup",
+    "description": "Lihat informasi IP publik",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "hash-identifier",
+    "name": "Hash Identifier",
+    "description": "Tebak jenis hash dari pola",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "text-encrypt",
+    "name": "Enkripsi Teks",
+    "description": "Enkripsi teks berbasis browser",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "text-decrypt",
+    "name": "Dekripsi Teks",
+    "description": "Dekripsi teks yang dibuat tool ini",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "html-escape-security",
+    "name": "HTML Escape",
+    "description": "Escape karakter berbahaya",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "sql-escape",
+    "name": "SQL Escape",
+    "description": "Escape literal teks SQL",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "regex-tester",
+    "name": "Regex Tester",
+    "description": "Uji ekspresi reguler",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "csp-builder",
+    "name": "CSP Builder",
+    "description": "Susun Content Security Policy",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "password-audit",
+    "name": "Audit Password",
+    "description": "Checklist praktik password aman",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "privacy-checklist",
+    "name": "Checklist Privasi",
+    "description": "Evaluasi kebiasaan privasi",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "secure-random",
+    "name": "Random Kriptografis",
+    "description": "Buat byte acak aman",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "certificate-info",
+    "name": "Info Sertifikat",
+    "description": "Lihat metadata sertifikat",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "domain-reputation",
+    "name": "Reputasi Domain",
+    "description": "Panduan pemeriksaan reputasi",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "url-decoder-security",
+    "name": "URL Decoder",
+    "description": "Decode URL untuk inspeksi",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "jwt-generator",
+    "name": "JWT Builder",
+    "description": "Buat token uji tanpa klaim keamanan",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "checksum-crc32",
+    "name": "CRC32",
+    "description": "Hitung checksum CRC32",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "otp-uri",
+    "name": "OTP URI Generator",
+    "description": "Buat URI konfigurasi OTP",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "csp-checklist",
+    "name": "CSP Checklist",
+    "description": "Periksa kebijakan keamanan konten",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "cookie-guide",
+    "name": "Cookie Security Guide",
+    "description": "Panduan atribut cookie aman",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "https-guide",
+    "name": "HTTPS Checker Guide",
+    "description": "Panduan memeriksa HTTPS",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "file-signature",
+    "name": "File Signature Check",
+    "description": "Periksa magic bytes file",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "exif-cleaner",
+    "name": "EXIF Cleaner",
+    "description": "Ekspor ulang foto tanpa metadata umum",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "data-masker",
+    "name": "Data Masker",
+    "description": "Samarkan data sensitif dalam teks",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "secret-scanner",
+    "name": "Secret Scanner",
+    "description": "Cari pola token dan secret umum",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "security-headers-guide",
+    "name": "Security Headers Guide",
+    "description": "Checklist header keamanan",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "safe-browsing-guide",
+    "name": "Safe Browsing Guide",
+    "description": "Panduan mengenali situs berisiko",
+    "category": "keamanan",
+    "icon": "shield-check"
+  },
+  {
+    "slug": "meta-tag-generator",
+    "name": "Meta Tag Generator",
+    "description": "Buat meta tag SEO",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "robots-generator",
+    "name": "Robots.txt Generator",
+    "description": "Buat file robots.txt",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "sitemap-generator",
+    "name": "Sitemap Generator",
+    "description": "Buat sitemap XML",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "manifest-generator",
+    "name": "PWA Manifest Generator",
+    "description": "Buat manifest aplikasi web",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "open-graph-generator",
+    "name": "Open Graph Generator",
+    "description": "Buat metadata Open Graph",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "twitter-card-generator",
+    "name": "Social Card Generator",
+    "description": "Buat metadata social card",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "favicon-generator",
+    "name": "Favicon Generator",
+    "description": "Buat tag favicon",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "schema-generator",
+    "name": "Schema Markup",
+    "description": "Buat JSON-LD dasar",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "html-formatter",
+    "name": "HTML Formatter",
+    "description": "Format kode HTML",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "html-minifier",
+    "name": "HTML Minifier",
+    "description": "Minifikasi HTML sederhana",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "css-formatter",
+    "name": "CSS Formatter",
+    "description": "Format kode CSS",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "css-minifier",
+    "name": "CSS Minifier",
+    "description": "Minifikasi CSS sederhana",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "js-formatter",
+    "name": "JavaScript Formatter",
+    "description": "Format JavaScript sederhana",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "js-minifier",
+    "name": "JavaScript Minifier",
+    "description": "Minifikasi JavaScript sederhana",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "url-parser",
+    "name": "URL Parser",
+    "description": "Uraikan komponen URL",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "query-builder",
+    "name": "Query String Builder",
+    "description": "Buat query string URL",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "url-shortener",
+    "name": "URL Shortener",
+    "description": "Pendekkan URL via layanan gratis",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "redirect-checker",
+    "name": "Redirect Checker",
+    "description": "Periksa redirect dengan batas CORS",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "broken-link-checker",
+    "name": "Broken Link Checker",
+    "description": "Cek tautan via proxy publik",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "pagespeed-guide",
+    "name": "PageSpeed Guide",
+    "description": "Panduan audit performa website",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "ping-test",
+    "name": "Ping Estimator",
+    "description": "Estimasi latency via fetch",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "backlink-guide",
+    "name": "Backlink Checklist",
+    "description": "Checklist audit backlink edukatif",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "dns-web-lookup",
+    "name": "DNS Lookup",
+    "description": "Cari record DNS publik",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "ip-lookup-web",
+    "name": "IP Lookup",
+    "description": "Cari info IP publik",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "domain-age-guide",
+    "name": "Domain Age Guide",
+    "description": "Panduan cek umur domain",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "http-status",
+    "name": "HTTP Status Reference",
+    "description": "Cari arti kode status HTTP",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "user-agent",
+    "name": "User Agent Parser",
+    "description": "Parse string user agent",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "color-contrast",
+    "name": "Color Contrast Checker",
+    "description": "Hitung rasio kontras WCAG",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "gradient-builder",
+    "name": "CSS Background Builder",
+    "description": "Buat deklarasi background solid",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "box-shadow-builder",
+    "name": "Box Shadow Builder",
+    "description": "Buat nilai box-shadow",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "border-radius-builder",
+    "name": "Border Radius Builder",
+    "description": "Buat deklarasi border radius",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "flexbox-playground",
+    "name": "Flexbox Playground",
+    "description": "Atur properti CSS Flexbox",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "grid-generator",
+    "name": "CSS Grid Generator",
+    "description": "Buat template CSS Grid",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "regex-url",
+    "name": "URL Regex Tester",
+    "description": "Uji pola URL dengan regex",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "html-entity-web",
+    "name": "HTML Entity Encoder",
+    "description": "Encode karakter HTML",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "json-ld-validator",
+    "name": "JSON-LD Inspector",
+    "description": "Periksa JSON-LD secara lokal",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "canonical-generator",
+    "name": "Canonical URL",
+    "description": "Buat tag canonical",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "hreflang-generator",
+    "name": "Hreflang Generator",
+    "description": "Buat tag hreflang",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "email-link-generator",
+    "name": "Mailto Generator",
+    "description": "Buat tautan email",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "qr-url-generator",
+    "name": "QR URL Generator",
+    "description": "Buat QR dari alamat URL",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "iframe-generator",
+    "name": "Iframe Generator",
+    "description": "Buat kode iframe",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "embed-generator",
+    "name": "Embed Code Builder",
+    "description": "Buat kode embed sederhana",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "htaccess-redirect",
+    "name": "Redirect Rules",
+    "description": "Buat aturan redirect Apache",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "nginx-redirect",
+    "name": "Nginx Redirect",
+    "description": "Buat aturan redirect Nginx",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "curl-generator",
+    "name": "cURL Generator",
+    "description": "Buat perintah cURL dari URL",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "http-request-builder",
+    "name": "HTTP Request Builder",
+    "description": "Susun contoh request HTTP",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "robots-tester",
+    "name": "Robots.txt Tester",
+    "description": "Uji aturan robots lokal",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "sitemap-validator",
+    "name": "Sitemap Validator",
+    "description": "Validasi struktur sitemap XML",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "webhook-tester-guide",
+    "name": "Webhook Guide",
+    "description": "Panduan uji webhook",
+    "category": "web",
+    "icon": "globe"
+  },
+  {
+    "slug": "website-audit-checklist",
+    "name": "Website Audit",
+    "description": "Checklist audit website",
+    "category": "web",
+    "icon": "globe"
+  }
+]

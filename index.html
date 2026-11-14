@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#081321"><meta name="description" content="DAFZZ Tools — 300 utilitas gratis untuk foto, teks, file, konverter, keamanan, dan web.">
+<title>DAFZZ Tools</title><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#" id="homeLink">ᙃᴀ̷𝖿ᴢᴢ<span>--Tools</span></a><nav><button data-gohome="categories">Kategori</button><button data-gohome="popular">Populer</button></nav><button id="themeBtn" class="icon-btn" aria-label="Ganti tema">◐</button></header>
+<main class="container">
+<section id="homeView" class="hero"><p class="eyebrow">300 UTILITAS · GRATIS</p><h1>Kerja lebih cepat.<br><span>Tanpa ribet.</span></h1><p class="muted intro">Kumpulan alat praktis untuk kebutuhan harian. Pilih kategori atau cari tool.</p><div class="search-wrap"><input id="globalSearch" class="field search" placeholder="Cari tool..." autocomplete="off"><div id="searchResults" class="search-results hidden"></div></div></section>
+<section id="categories" class="section"><div class="section-head"><div><p class="eyebrow">JELAJAHI</p><h2>Kategori tools</h2></div><span class="muted">6 kategori</span></div><div id="categoryGrid" class="category-grid"></div></section>
+<section id="popular" class="section"><p class="eyebrow">MULAI CEPAT</p><h2>Tools populer</h2><div id="popularGrid" class="tool-grid"></div></section>
+<section id="categoryView" class="section hidden"><button class="back-btn" id="backHome">← Kembali</button><p class="eyebrow" id="categoryEyebrow"></p><h2 id="categoryTitle"></h2><p class="muted" id="categoryDescription"></p><input id="categorySearch" class="field search" placeholder="Cari dalam kategori..."><div id="categoryTools" class="tool-grid"></div></section>
+<section id="toolView" class="section hidden"><button class="back-btn" id="backCategory">← Kembali ke kategori</button><p class="eyebrow" id="toolCategory"></p><div class="tool-heading"><div><h2 id="toolTitle"></h2><p class="muted" id="toolDescription"></p></div><span id="toolStatus" class="badge">SIAP DIGUNAKAN</span></div><div class="workspace"><div id="toolInputArea"></div><div class="actions"><button class="btn primary" id="processBtn">Jalankan tool</button><button class="btn" id="resetBtn">Reset</button></div><p id="status" class="status" aria-live="polite"></p><div id="previewArea" class="preview hidden"></div><div id="resultArea" class="result hidden"><label for="output">Hasil</label><textarea id="output" class="field" rows="8" readonly></textarea><div class="actions"><button class="btn" id="copyBtn">Salin hasil</button><button class="btn" id="downloadBtn">Unduh hasil</button></div></div></div><div class="section related"><p class="eyebrow">LANJUTKAN</p><h3>Tools terkait</h3><div id="relatedTools" class="tool-grid"></div></div></section>
+</main><footer class="footer">DAFZZ TOOLS <span>·</span> 300 UTILITAS GRATIS</footer><div id="toast" class="toast" role="status"></div><script src="script.js"></script>
+</body></html>
