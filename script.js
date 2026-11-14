@@ -101,21 +101,44 @@ async function removeMarkedAreaAI(file){
  result('Penghapusan area selesai menggunakan model AI LaMa.','hasil-hapus-area-ai.png',blob);
 }
 
+async function loadQrLibrary(globalName){
+ const urls=globalName==='QRCode' ? [
+  'https://cdn.jsdelivr.net/npm/qrcode@1.5.4/build/qrcode.min.js',
+  'https://unpkg.com/qrcode@1.5.4/build/qrcode.min.js'
+ ] : [
+  'https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js',
+  'https://unpkg.com/jsqr@1.4.0/dist/jsQR.js'
+ ];
+ if(window[globalName])return window[globalName];
+ let lastError;
+ for(const url of urls){
+  try{
+   const lib=await loadLib(url,globalName);
+   if(lib && (globalName==='QRCode' ? typeof lib.toCanvas==='function' : typeof lib==='function'))return lib;
+   throw Error('Library QR termuat tetapi fungsi utamanya tidak tersedia.');
+  }catch(err){lastError=err;}
+ }
+ throw Error('Library QR tidak dapat dimuat. Sambungkan internet sekali, lalu muat ulang halaman. Detail: '+(lastError?.message||'koneksi gagal'));
+}
 async function decodeQrFromFile(file){
  if(!file)throw Error('Pilih foto yang berisi QR Code.');
- if(!file.type.startsWith('image/'))throw Error('File harus berupa gambar.');
- const jsQR=await loadLib('https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js','jsQR');
+ if(!file.type || !file.type.startsWith('image/'))throw Error('File harus berupa gambar.');
+ if(typeof createImageBitmap!=='function')throw Error('Browser ini belum mendukung pembacaan gambar.');
+ const jsQR=await loadQrLibrary('jsQR');
  const bmp=await createImageBitmap(file);
- const canvas=document.createElement('canvas'),ctx=canvas.getContext('2d',{willReadFrequently:true});
- const scale=Math.min(1,2400/Math.max(bmp.width,bmp.height));
- canvas.width=Math.max(1,Math.round(bmp.width*scale));canvas.height=Math.max(1,Math.round(bmp.height*scale));
- ctx.drawImage(bmp,0,0,canvas.width,canvas.height);
- const image=ctx.getImageData(0,0,canvas.width,canvas.height);
- const code=jsQR(image.data,image.width,image.height,{ inversionAttempts:'attemptBoth' });
- if(!code)throw Error('QR Code tidak ditemukan. Coba gambar yang lebih jelas dan tidak terpotong.');
- $('previewArea').innerHTML=`<img alt="Foto QR yang dibaca" src="${URL.createObjectURL(file)}"><p class="hint">QR berhasil dibaca.</p>`;
- show('previewArea');
- result(code.data,'qr-hasil.txt',new Blob([code.data],{type:'text/plain;charset=utf-8'}));
+ try{
+  const maxSide=2400,scale=Math.min(1,maxSide/Math.max(bmp.width,bmp.height));
+  const canvas=document.createElement('canvas'),ctx=canvas.getContext('2d',{willReadFrequently:true});
+  canvas.width=Math.max(1,Math.round(bmp.width*scale));canvas.height=Math.max(1,Math.round(bmp.height*scale));
+  if(!ctx)throw Error('Browser tidak dapat membuat canvas untuk membaca QR.');
+  ctx.drawImage(bmp,0,0,canvas.width,canvas.height);
+  const image=ctx.getImageData(0,0,canvas.width,canvas.height);
+  const code=jsQR(image.data,image.width,image.height,{inversionAttempts:'attemptBoth'});
+  if(!code)throw Error('QR Code tidak ditemukan. Coba foto yang lebih jelas, tidak miring, dan QR tidak terpotong.');
+  $('previewArea').innerHTML=`<img alt="Foto QR yang dibaca" src="${URL.createObjectURL(file)}"><p class="hint">QR berhasil dibaca.</p>`;
+  show('previewArea');
+  result(code.data,'qr-hasil.txt',new Blob([code.data],{type:'text/plain;charset=utf-8'}));
+ }finally{bmp.close?.();}
 }
 async function removeBackgroundAI(file){
  if(!file)throw Error('Pilih gambar terlebih dahulu.');
@@ -247,7 +270,16 @@ async function upscaleImageAI(file,scale){
  result(`AI Upscale ${scale}x berhasil. Resolusi hasil: ${raw.width} × ${raw.height}.`,'hasil-ai-upscale-'+scale+'x.png',blob);
 }
 
-async function makeQr(s){if(!String(s||'').trim())throw Error('Masukkan teks atau URL yang ingin dijadikan QR Code.');let lib=await loadLib('https://cdn.jsdelivr.net/npm/qrcode@1.5.4/build/qrcode.min.js','QRCode');let canvas=document.createElement('canvas');await lib.toCanvas(canvas,s||'https://example.com',{width:320,margin:2});$('previewArea').innerHTML='';$('previewArea').appendChild(canvas);show('previewArea');let blob=await new Promise(r=>canvas.toBlob(r,'image/png'));result('QR Code berhasil dibuat.','qr-code.png',blob)}
+async function makeQr(s){
+ const value=String(s??'').trim();
+ if(!value)throw Error('Masukkan teks atau URL yang ingin dijadikan QR Code.');
+ const lib=await loadQrLibrary('QRCode');
+ const canvas=document.createElement('canvas');
+ await lib.toCanvas(canvas,value,{width:360,margin:3,errorCorrectionLevel:'M',color:{dark:'#000000',light:'#FFFFFF'}});
+ const blob=await new Promise((resolve,reject)=>canvas.toBlob(b=>b?resolve(b):reject(Error('Gagal membuat file PNG QR.')),'image/png'));
+ $('previewArea').innerHTML='';$('previewArea').appendChild(canvas);show('previewArea');
+ result('QR Code berhasil dibuat.','qr-code.png',blob);
+}
 async function run(){if(!activeTool)return;let slug=activeTool.slug,cat=activeTool.category,s=val('input');let chosen=[...($('fileInput')?.files||[])];$('status').textContent='Memproses...';hide('resultArea');hide('previewArea');lastBlob=null;try{let out;if(cat==='foto'){let f=$('fileInput')?.files?.[0];if(slug==='base64-gambar'){let raw=s.trim().replace(/^data:[^,]+,/, '');let bin=atob(raw),arr=Uint8Array.from(bin,c=>c.charCodeAt(0)),blob=new Blob([arr],{type:'image/png'}),u=URL.createObjectURL(blob);$('previewArea').innerHTML=`<img alt=\"Gambar hasil Base64\" src=\"${u}\">`;show('previewArea');result('Gambar berhasil dibuat.','hasil.png',blob);return}if(slug==='rename-foto'){if(!f)throw Error('Pilih foto.');result(`Nama file baru: ${s||'foto-baru.'+f.name.split('.').pop()}\nUnduh hasil menggunakan nama yang dimasukkan.`,s||f.name,f);return}if(['gambar-base64'].includes(slug)){if(!f)throw Error('Pilih gambar.');let data=await new Promise((r,j)=>{let fr=new FileReader();fr.onload=()=>r(fr.result);fr.onerror=()=>j(Error('Gagal membaca gambar'));fr.readAsDataURL(f)});result(data,'gambar.txt',new Blob([data],{type:'text/plain'}));return}if(['foto-ke-pdf'].includes(slug)){out=await fileTool('image-to-pdf',[...($('fileInput')?.files||[])],'');return}if(['pdf-ke-foto','konversi-gif','konversi-bmp','buat-kolase','buat-meme','ekstrak-warna','ambil-pallete'].includes(slug))throw Error('Fitur ini belum memiliki pemrosesan khusus yang benar. File asli tidak akan diubah.');if(slug==='hapus-latar'){await removeBackgroundAI(f);return}if(slug==='ocr-gambar'){await ocrImageAI(f);return}if(slug==='deteksi-wajah'){await detectFaces(f);return}if(['hapus-objek','hapus-orang','hapus-teks-foto','hapus-watermark'].includes(slug)){await removeMarkedAreaAI(f);return}if(slug==='upscale-2x'){await upscaleImageAI(f,2);return}if(slug==='upscale-4x'){await upscaleImageAI(f,4);return}if(slug==='unblur'||slug==='restore-foto'){await restoreImageAI(f,slug==='unblur'?'Pertajam Foto':'Pulihkan Foto');return}if(slug==='colorize'){await colorizeAI(f);return}if(['hapus-objek','hapus-orang','hapus-teks-foto','hapus-watermark','unblur','restore-foto','colorize'].includes(slug))throw Error('Model AI untuk fitur ini belum terpasang. Fitur tidak akan menampilkan hasil palsu; diperlukan model inpainting/restorasi/pewarnaan yang sesuai.');if(['metadata-foto','gambar-transparan'].includes(slug)){if(!f)throw Error('Pilih gambar.');let bmp=await createImageBitmap(f);if(slug==='metadata-foto')out=`Nama: ${f.name}\nTipe: ${f.type}\nUkuran: ${f.size} byte\nDimensi: ${bmp.width} × ${bmp.height}`;else if(slug==='gambar-transparan')out=`Alpha channel: ${f.type==='image/png'?'mungkin tersedia':'biasanya tidak tersedia'}\nDimensi: ${bmp.width}×${bmp.height}\nCatatan: pemeriksaan piksel penuh tidak dilakukan.`;else {let c=document.createElement('canvas');c.width=64;c.height=64;let x=c.getContext('2d');x.drawImage(bmp,0,0,64,64);let dat=x.getImageData(0,0,64,64).data,counts={};for(let i=0;i<dat.length;i+=16){let hex=[dat[i],dat[i+1],dat[i+2]].map(v=>v.toString(16).padStart(2,'0')).join('').toUpperCase();counts[hex]=(counts[hex]||0)+1}out=Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,8).map(([h,n])=>`#${h} (${n})`).join('\n')}if(slug==='gambar-transparan'){let c=document.createElement('canvas');c.width=Math.min(128,bmp.width);c.height=Math.min(128,bmp.height);let x=c.getContext('2d');x.drawImage(bmp,0,0,c.width,c.height);let d=x.getImageData(0,0,c.width,c.height).data;let transparent=0;for(let i=3;i<d.length;i+=4)if(d[i]<255)transparent++;out=`Piksel transparan terdeteksi: ${transparent>0?'Ya':'Tidak'}\nSampel: ${c.width*c.height} piksel`}result(out);return}if(slug==='kompres-batch'){let fs=[...($('fileInput')?.files||[])];if(!fs.length)throw Error('Pilih gambar.');let JSZip=await loadLib('https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js','JSZip'),zip=new JSZip(),rows=[];for(let file of fs){if(!file.type.startsWith('image/'))throw Error(`${file.name} bukan gambar.`);let bmp=await createImageBitmap(file),c=document.createElement('canvas');c.width=bmp.width;c.height=bmp.height;c.getContext('2d').drawImage(bmp,0,0);let blob=await new Promise(r=>c.toBlob(r,'image/jpeg',.82));zip.file(file.name.replace(/\.[^.]+$/,'')+'-compressed.jpg',blob);rows.push(`${file.name}: selesai`)}let packed=await zip.generateAsync({type:'blob'});result(rows.join('\n'),'gambar-kompres-batch.zip',packed);return}await imageProcess(f,slug);return}else if(cat==='teks')out=textTransform(s,slug);else if(cat==='konverter')out=convert(slug,s);else if(cat==='keamanan')out=await securityTool(slug,s,chosen);else if(cat==='web'&&slug==='qr-url-generator'){await makeQr(s);return}else if(cat==='file'&&slug==='qr-to-file'){await decodeQrFromFile(chosen[0]);return}else if(cat==='web')out=await webTool(slug,s);else if(cat==='file')out=await fileTool(slug,chosen,s);if(cat==='teks'&&slug==='markdown-preview'){$('previewArea').innerHTML=out;show('previewArea');result('Pratinjau Markdown ditampilkan.','markdown-preview.html',new Blob([out],{type:'text/html'}));}else if(!lastBlob)result(out,slug+'.txt');}catch(e){$('status').textContent=e.message||'Terjadi kesalahan.'}}
 document.addEventListener('change',e=>{if(e.target&&e.target.id==='fileInput'){let fs=[...e.target.files];let hint=e.target.closest('.control')?.querySelector('.hint');if(hint)hint.textContent=fs.length?fs.map(f=>`${f.name} (${(f.size/1024).toFixed(1)} KB)`).join(' · '):'Pilih file untuk mulai memproses.';}});
 function setupInpaintMask(file){
