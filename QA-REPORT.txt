@@ -1,0 +1,65 @@
+DAFZZ-TOOLS — LAPORAN BUILD & PENGUJIAN
+========================================
+
+SUMBER
+------
+Dibangun dari upload pengguna: TOOLS 300.zip.
+Semua 300 entri katalog, nama, slug, dan enam kategori dipertahankan.
+
+PERUBAHAN PADA BUILD INI
+-----------------------
+1. QR Generator (teks/URL) memakai encoder QR JavaScript lokal qrcode-local.js.
+   Pembuatan QR tidak lagi membutuhkan CDN, API key, atau koneksi internet.
+2. QR dari foto: foto dikecilkan dan dikompres menjadi data URI sebelum dimasukkan
+   ke QR. Kapasitas QR terbatas; foto biasa yang lebih besar sebaiknya diwakili
+   URL foto yang dapat diakses penerima.
+3. Pembaca QR dari foto mencoba BarcodeDetector bawaan browser terlebih dahulu.
+   Jika API itu tidak tersedia, jsQR dicoba dari CDN; jadi pemindaian offline
+   lintas semua browser belum dijamin. Chrome terbaru pada HTTPS/localhost
+   merupakan target utama untuk BarcodeDetector.
+4. Service worker dinaikkan ke cache v9 dan menyertakan qrcode-local.js.
+5. Memperbaiki urutan handler tanggal/zona waktu agar date-add-subtract dan
+   timezone-converter memakai parameter zona waktu/tambah-kurang yang tersedia.
+6. Memperketat validasi rasio agar pembagian nol atau input tidak valid ditolak.
+7. PowerPoint ke PDF ditambahkan sebagai ekspor teks per slide dari PPTX. Ini
+   mempertahankan teks yang bisa diekstrak, bukan tata letak, gambar, atau animasi.
+8. Meme/sticker Canvas, kolase, palet warna, dan editor foto manual tetap ada
+   pada build sebelumnya; Hapus Teks hanya menyapu area yang dipilih.
+
+PENGUJIAN YANG DILAKUKAN
+-----------------------
+- tools.json berhasil diparse.
+- Jumlah katalog: tepat 300 tools.
+- Kategori: foto 50, teks 50, file 50, konverter 50, keamanan 50, web 50.
+- Slug unik: 300 dari 300.
+- node --check lulus untuk script.js, qrcode-local.js, dan sw.js.
+- Encoder QR lokal diuji di Node dengan canvas mock: berhasil membentuk matriks
+  QR dan menggambar modul QR untuk teks uji.
+- Tidak ada pengujian interaksi end-to-end di HP yang dapat diklaim dari build ini.
+
+BATASAN YANG MASIH ADA — TIDAK DISEMBUNYIKAN
+-------------------------------------------
+- Lindungi PDF / Buka PDF: belum tersedia enkripsi/dekripsi password PDF yang
+  kompatibel dengan browser pada paket ini. Fungsi akan menolak operasi, bukan
+  membuat file palsu atau mengklaim berhasil.
+- Konversi ke GIF: encoder GIF belum dibundel; fungsi memberi pesan jelas dan
+  tidak membuat file dengan ekstensi GIF palsu.
+- PowerPoint ke PDF: ekspor teks slide saja; bukan rendering visual lengkap.
+- PDF ke Excel menghasilkan CSV teks sederhana, bukan ekstraksi tabel presisi.
+- PDF ke Word menghasilkan DOCX sederhana dari teks yang berhasil diekstrak.
+- PDF compress menyimpan ulang struktur PDF; ukuran akhir tidak dijamin mengecil.
+- AVIF bergantung dukungan encoder browser.
+- Scan QR tanpa koneksi memerlukan dukungan BarcodeDetector di browser; fallback
+  jsQR masih menggunakan CDN jika API bawaan tidak tersedia.
+- Penghapusan objek memakai clone brush manual, bukan content-aware fill.
+- Penghapusan latar memakai eraser manual/transparansi, bukan segmentasi otomatis.
+- OCR dan deteksi wajah otomatis tidak tersedia; alurnya manual/non-AI.
+- Pemeriksaan DNS, SSL, WHOIS, dan reputasi live tidak dilakukan; tools terkait
+  hanya menyediakan alternatif lokal/heuristik dan tidak mengklaim hasil live.
+- Belum ada uji browser penuh untuk seluruh 300 tools pada perangkat Android.
+
+STATUS
+------
+Ini build yang diperbarui dengan QR generator lokal dan perbaikan kode tambahan.
+Bukan klaim bahwa seluruh 300 tools telah lulus uji end-to-end atau semua fungsi
+khusus yang membutuhkan encoder/format kompleks sudah tersedia.

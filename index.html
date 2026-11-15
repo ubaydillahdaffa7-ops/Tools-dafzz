@@ -2,16 +2,55 @@
 <html lang="id">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#081321"><meta name="description" content="DAFZZ Tools — 300 utilitas gratis untuk foto, teks, file, konverter, keamanan, dan web.">
-<title>DAFZZ Tools</title><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css">
+<meta name="theme-color" content="#070b14"><meta name="description" content="DAFZZ-TOOLS — 300 utilitas digital gratis untuk foto, teks, file, konverter, keamanan, dan web.">
+<title>DAFZZ-TOOLS — Digital Toolbox</title>
+<link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="topbar"><a class="brand" href="#" id="homeLink">ᙃᴀ̷𝖿ᴢᴢ<span>--Tools</span></a><nav><button data-gohome="categories">Kategori</button><button data-gohome="popular">Populer</button></nav><button id="themeBtn" class="icon-btn" aria-label="Ganti tema">◐</button></header>
+<header class="topbar">
+  <a class="brand" href="#" id="homeLink"><span class="brand-mark">D</span><span>DAFZZ<span class="brand-blue">-TOOLS</span></span></a>
+  <nav aria-label="Navigasi utama"><button data-gohome="homeView">Beranda</button><button data-gohome="categories">Kategori</button><button data-gohome="popular">Populer</button></nav>
+  <button id="themeBtn" class="icon-btn" aria-label="Ganti tema">◐</button>
+</header>
 <main class="container">
-<section id="homeView" class="hero"><p class="eyebrow">300 UTILITAS · GRATIS</p><h1>Kerja lebih cepat.<br><span>Tanpa ribet.</span></h1><p class="muted intro">Kumpulan alat praktis untuk kebutuhan harian. Pilih kategori atau cari tool.</p><div class="search-wrap"><input id="globalSearch" class="field search" placeholder="Cari tool..." autocomplete="off"><div id="searchResults" class="search-results hidden"></div></div></section>
-<section id="categories" class="section"><div class="section-head"><div><p class="eyebrow">JELAJAHI</p><h2>Kategori tools</h2></div><span class="muted">6 kategori</span></div><div id="categoryGrid" class="category-grid"></div></section>
-<section id="popular" class="section"><p class="eyebrow">MULAI CEPAT</p><h2>Tools populer</h2><div id="popularGrid" class="tool-grid"></div></section>
+<section id="homeView" class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow"><span class="live-dot"></span> YOUR DIGITAL TOOLBOX</p>
+    <h1>Tools for<br><span>everything.</span></h1>
+    <p class="intro">Semua kebutuhan digitalmu, dalam satu tempat. Cepat, praktis, dan tanpa ribet.</p>
+    <div class="search-wrap"><span class="search-icon">⌕</span><input id="globalSearch" class="field search" placeholder="Cari tools... (QR, PDF, edit foto)" autocomplete="off"><div id="searchResults" class="search-results hidden"></div></div>
+    <div class="hero-meta"><span>✦ 300+ tools</span><span>•</span><span>Gratis digunakan</span><span>•</span><span>Browser-based</span></div>
+  </div>
+  <div class="orb-stage" aria-label="Bola wireframe biru dekoratif">
+    <div class="orb-halo"></div>
+    <svg class="wire-orb" viewBox="0 0 360 360" role="img" aria-label="Bola digital dari garis biru">
+      <defs><radialGradient id="orbFill"><stop offset="0" stop-color="#168bff" stop-opacity=".16"/><stop offset=".78" stop-color="#0877ff" stop-opacity=".025"/><stop offset="1" stop-color="#0877ff" stop-opacity="0"/></radialGradient><filter id="orbGlow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+      <circle cx="180" cy="180" r="144" fill="url(#orbFill)"/>
+      <g class="orb-lines" fill="none" stroke="#168bff" stroke-width="1.05" filter="url(#orbGlow)">
+        <circle cx="180" cy="180" r="112"/>
+        <ellipse cx="180" cy="180" rx="112" ry="27"/>
+        <ellipse cx="180" cy="180" rx="112" ry="54"/>
+        <ellipse cx="180" cy="180" rx="112" ry="82"/>
+        <ellipse cx="180" cy="180" rx="30" ry="112"/>
+        <ellipse cx="180" cy="180" rx="58" ry="112"/>
+        <ellipse cx="180" cy="180" rx="86" ry="112"/>
+      </g>
+      <g class="orb-nodes" fill="#8bd5ff" filter="url(#orbGlow)"><circle cx="180" cy="68" r="3"/><circle cx="292" cy="180" r="3"/><circle cx="180" cy="292" r="3"/><circle cx="68" cy="180" r="3"/><circle cx="101" cy="101" r="2"/><circle cx="259" cy="259" r="2"/><circle cx="259" cy="101" r="2"/><circle cx="101" cy="259" r="2"/></g>
+    </svg>
+    <div class="orb-caption"><span></span> DIGITAL CORE / ONLINE</div>
+  </div>
+</section>
+<section id="categories" class="section">
+  <div class="section-head"><div><p class="eyebrow">EXPLORE THE TOOLBOX</p><h2>Kategori pilihan</h2></div><span class="section-note">01 — 06</span></div>
+  <div id="categoryGrid" class="category-grid"></div>
+</section>
+<section id="popular" class="section popular-section">
+  <div class="section-head"><div><p class="eyebrow">QUICK ACCESS</p><h2>Tools populer</h2></div><span class="section-note">PILIH & MULAI ↗</span></div>
+  <div id="popularGrid" class="tool-grid"></div>
+</section>
 <section id="categoryView" class="section hidden"><button class="back-btn" id="backHome">← Kembali</button><p class="eyebrow" id="categoryEyebrow"></p><h2 id="categoryTitle"></h2><p class="muted" id="categoryDescription"></p><input id="categorySearch" class="field search" placeholder="Cari dalam kategori..."><div id="categoryTools" class="tool-grid"></div></section>
-<section id="toolView" class="section hidden"><button class="back-btn" id="backCategory">← Kembali ke kategori</button><p class="eyebrow" id="toolCategory"></p><div class="tool-heading"><div><h2 id="toolTitle"></h2><p class="muted" id="toolDescription"></p></div><span id="toolStatus" class="badge">SIAP DIGUNAKAN</span></div><div class="workspace"><div id="toolInputArea"></div><div class="actions"><button class="btn primary" id="processBtn">Jalankan tool</button><button class="btn" id="resetBtn">Reset</button></div><p id="status" class="status" aria-live="polite"></p><div id="previewArea" class="preview hidden"></div><div id="resultArea" class="result hidden"><label for="output">Hasil</label><textarea id="output" class="field" rows="8" readonly></textarea><div class="actions"><button class="btn" id="copyBtn">Salin hasil</button><button class="btn" id="downloadBtn">Unduh hasil</button></div></div></div><div class="section related"><p class="eyebrow">LANJUTKAN</p><h3>Tools terkait</h3><div id="relatedTools" class="tool-grid"></div></div></section>
-</main><footer class="footer">DAFZZ TOOLS <span>·</span> 300 UTILITAS GRATIS</footer><div id="toast" class="toast" role="status"></div><script src="script.js"></script>
+<section id="toolView" class="section hidden"><button class="back-btn" id="backCategory">← Kembali ke kategori</button><p class="eyebrow" id="toolCategory"></p><div class="tool-heading"><div><h2 id="toolTitle"></h2><p class="muted" id="toolDescription"></p></div><span id="toolStatus" class="badge">SIAP DIGUNAKAN</span></div><div class="workspace"><div id="toolInputArea"></div><div class="actions"><button class="btn primary" id="processBtn">Jalankan tool <span>↗</span></button><button class="btn" id="resetBtn">Reset</button></div><p id="status" class="status" aria-live="polite"></p><div id="previewArea" class="preview hidden"></div><div id="resultArea" class="result hidden"><label for="output">Hasil</label><textarea id="output" class="field" rows="8" readonly></textarea><div class="actions"><button class="btn" id="copyBtn">Salin hasil</button><button class="btn" id="downloadBtn">Unduh hasil</button></div></div></div><div class="section related"><p class="eyebrow">KEEP EXPLORING</p><h3>Tools terkait</h3><div id="relatedTools" class="tool-grid"></div></div></section>
+</main>
+<footer class="footer"><span class="footer-brand">DAFZZ-TOOLS</span><span>SMALL TOOLS. BIG POSSIBILITIES.</span><span>© 2026</span></footer>
+<div id="toast" class="toast" role="status"></div><script src="script.js"></script>
 </body></html>

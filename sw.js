@@ -1,11 +1,12 @@
 'use strict';
 
-const CACHE_NAME = 'dafzz-tools-v6';
+const CACHE_NAME = 'dafzz-tools-v9';
 const CORE_FILES = [
   './',
   './index.html',
   './style.css',
   './script.js',
+  './qrcode-local.js',
   './tools.json',
   './manifest.webmanifest'
 ];

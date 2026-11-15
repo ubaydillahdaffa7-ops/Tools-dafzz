@@ -2,63 +2,63 @@
   {
     "slug": "hapus-latar",
     "name": "Hapus Latar",
-    "description": "Hapus latar foto langsung di browser",
+    "description": "Hapus area latar secara manual dengan kuas transparan",
     "category": "foto",
     "icon": "image"
   },
   {
     "slug": "hapus-objek",
     "name": "Hapus Objek",
-    "description": "Tandai area untuk disamarkan",
+    "description": "Samarkan objek dengan kuas clone manual",
     "category": "foto",
     "icon": "image"
   },
   {
     "slug": "hapus-orang",
     "name": "Hapus Orang",
-    "description": "Tandai orang untuk penghapusan eksperimental",
+    "description": "Samarkan orang dengan kuas clone manual",
     "category": "foto",
     "icon": "image"
   },
   {
     "slug": "hapus-teks-foto",
     "name": "Hapus Teks Foto",
-    "description": "Samarkan area teks pada gambar",
+    "description": "Hapus tulisan yang disapukan tanpa menghapus foto lainnya",
     "category": "foto",
     "icon": "image"
   },
   {
     "slug": "upscale-2x",
     "name": "Upscale 2x",
-    "description": "Perbesar gambar dengan interpolasi",
+    "description": "Perbesar gambar 2x dengan interpolasi browser (non-AI)",
     "category": "foto",
     "icon": "image"
   },
   {
     "slug": "upscale-4x",
     "name": "Upscale 4x",
-    "description": "Perbesar gambar hingga empat kali",
+    "description": "Perbesar gambar 4x dengan interpolasi browser (non-AI)",
     "category": "foto",
     "icon": "image"
   },
   {
     "slug": "unblur",
     "name": "Pertajam Foto",
-    "description": "Kurangi kesan buram dengan unsharp mask",
+    "description": "Pertajam tampilan foto dengan filter kontras manual (non-AI)",
     "category": "foto",
     "icon": "image"
   },
   {
     "slug": "restore-foto",
     "name": "Pulihkan Foto",
-    "description": "Denoise dan tingkatkan kontras foto",
+    "description": "Perbaiki tampilan foto dengan filter warna dan kontras (non-AI)",
     "category": "foto",
     "icon": "image"
   },
   {
     "slug": "colorize",
     "name": "Warnai Foto",
-    "description": "Eksperimen pewarnaan foto hitam putih",
+    "description": "Pewarnaan tint manual (non-AI)",
     "category": "foto",
     "icon": "image"
   },
@@ -170,7 +170,7 @@
   {
     "slug": "hapus-watermark",
     "name": "Hapus Watermark",
-    "description": "Panduan retouch area watermark",
+    "description": "Retouch area watermark dengan kuas clone manual",
     "category": "foto",
     "icon": "image"
   },
@@ -268,14 +268,14 @@
   {
     "slug": "ocr-gambar",
     "name": "OCR Gambar",
-    "description": "Ekstrak teks dari gambar jika didukung",
+    "description": "Catat teks dari gambar secara manual (tanpa OCR otomatis)",
     "category": "foto",
     "icon": "image"
   },
   {
     "slug": "deteksi-wajah",
     "name": "Deteksi Wajah",
-    "description": "Deteksi wajah secara lokal bila model tersedia",
+    "description": "Panduan pemeriksaan wajah manual (tanpa deteksi otomatis)",
     "category": "foto",
     "icon": "image"
   },
@@ -1002,8 +1002,8 @@
   },
   {
     "slug": "qr-to-file",
-    "name": "QR ke File",
-    "description": "Simpan QR sebagai gambar",
+    "name": "Pembaca QR dari Foto",
+    "description": "Baca isi QR Code dari foto PNG, JPG, atau WebP",
     "category": "file",
     "icon": "file"
   },
@@ -2024,8 +2024,8 @@
   },
   {
     "slug": "qr-url-generator",
-    "name": "QR URL Generator",
-    "description": "Buat QR dari alamat URL",
+    "name": "QR Generator (Teks/URL)",
+    "description": "Buat QR Code dari teks, tautan, atau data singkat",
     "category": "web",
     "icon": "globe"
   },
